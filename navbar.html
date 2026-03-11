@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3 Navbar Designs</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#dce3ea;
+            padding:50px;
+        }
+
+        /* Common Navbar Style */
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:#1f242d;
+            padding:15px 50px;
+            border-radius:5px;
+            box-shadow:0 8px 15px rgba(0,0,0,0.2);
+            margin-bottom:60px;
+        }
+
+        .logo{
+            color:white;
+            font-weight:bold;
+            font-size:20px;
+            letter-spacing:1px;
+        }
+
+        .nav-links{
+            list-style:none;
+            display:flex;
+            gap:30px;
+        }
+
+        .nav-links a{
+            text-decoration:none;
+            color:#bfc6ce;
+            transition:0.3s;
+        }
+
+        .nav-links a:hover{
+            color:white;
+        }
+
+        .btn{
+            background:#00a6b4;
+            color:white;
+            border:none;
+            padding:8px 20px;
+            border-radius:20px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:#0093a0;
+        }
+
+        /* Third navbar extra grouping */
+        .right-menu{
+            display:flex;
+            align-items:center;
+            gap:40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- 1️⃣ Navbar Design -->
+    <nav class="navbar">
+        <div class="logo">LOGOBAKERY</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <button class="btn">Contact</button>
+    </nav>
+
+
+    <!-- 2️⃣ Navbar Design -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><button class="btn">Contact</button></li>
+        </ul>
+
+        <div class="logo">LOGOBAKERY</div>
+    </nav>
+
+
+    <!-- 3️⃣ Navbar Design -->
+    <nav class="navbar">
+        <div class="logo">LOGOBAKERY</div>
+
+        <div class="right-menu">
+            <ul class="nav-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <button class="btn">Contact</button>
+        </div>
+    </nav>
+
+</body>
+</html>
